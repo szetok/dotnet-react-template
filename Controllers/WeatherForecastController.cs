@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using dotnet_react_template.Models;
 
 namespace dotnet_react_template.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]

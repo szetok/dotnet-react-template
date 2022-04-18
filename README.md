@@ -1,6 +1,10 @@
 # dotnet-react-template
 
-ASP.NET Core with React project template (https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-6.0&tabs=visual-studio), but better. Uses updated versions of .NET, NuGet packages, and npm packages.
+Sample React application with .NET Core backend, based on .NET's React project template:
+
+https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-6.0&tabs=visual-studio
+
+Uses updated versions and features of .NET, NuGet packages, and npm packages.
 
 ## Development
 
