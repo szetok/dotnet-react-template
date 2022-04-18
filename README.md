@@ -13,9 +13,11 @@ Uses updated versions and features of .NET, NuGet packages, and npm packages.
 ```
 $ dotnet build
 $ dotnet run
+$ cd ClientApp
+$ npm start
 ```
 
-The client SPA will be running on https://localhost:44406
+The SPA with backend will be running on https://localhost:44406
 
 ### Containerized
 
@@ -31,4 +33,4 @@ $ docker build -t dotnet-react-template .
 $ docker run -p 44406:80 dotnet-react-template
 ```
 
-The client SPA will be running on http://localhost:44406
+The SPA with backend will be running on http://localhost:44406
