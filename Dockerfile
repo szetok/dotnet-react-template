@@ -7,7 +7,7 @@ RUN apk add --no-cache libc6-compat curl tzdata icu-libs nodejs npm
 
 # Copy the source from your machine onto the container.
 WORKDIR /app
-COPY . .
+COPY src .
 
 # Compile, then pack the compiled app and dependencies into a deployable unit.
 RUN dotnet publish dotnet-react-template.csproj --output /app/publish --configuration Release --runtime linux-musl-x64

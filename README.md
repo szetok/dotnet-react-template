@@ -10,18 +10,26 @@ Uses updated versions and features of .NET, NuGet packages, and npm packages.
 
 ### Non-Containerized
 
+Build and run the .NET backend
 ```
+$ cd src
 $ dotnet build
 $ dotnet run
+```
+
+Then in a second terminal, run the React application:
+```
+$ cd src
 $ cd ClientApp
 $ npm start
 ```
 
-The SPA with backend will be running on https://localhost:44406
+The React application with backend will be running on https://localhost:44406
 
 ### Containerized
 
 ```
+$ cd src
 $ docker-compose build
 $ docker-compose up
 ```
@@ -29,8 +37,9 @@ $ docker-compose up
 or
 
 ```
+$ cd src
 $ docker build -t dotnet-react-template .
 $ docker run -p 44406:80 dotnet-react-template
 ```
 
-The SPA with backend will be running on http://localhost:44406
+The React application with backend will be running on http://localhost:44406
