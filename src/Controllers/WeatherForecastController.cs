@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using dotnet_react_template.Models;
+﻿using dotnet_react_template.Models;
 using dotnet_react_template.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_react_template.Controllers;
 
@@ -8,16 +8,10 @@ namespace dotnet_react_template.Controllers;
 [Route("api/[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private readonly ILogger<WeatherForecastController> _logger;
     private readonly IGetWeatherForecast _getWeatherForecast;
 
-    public WeatherForecastController(
-        ILogger<WeatherForecastController> logger,
-        IGetWeatherForecast getWeatherForecast)
-    {
-        _logger = logger;
-        _getWeatherForecast = getWeatherForecast;
-    }
+    public WeatherForecastController(IGetWeatherForecast getWeatherForecast)
+        => _getWeatherForecast = getWeatherForecast;
 
     [HttpGet]
     public IEnumerable<WeatherForecast> Get() => _getWeatherForecast.Get();
