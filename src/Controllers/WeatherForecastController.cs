@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using dotnet_react_template.Models;
+using dotnet_react_template.Services;
 
 namespace dotnet_react_template.Controllers;
 
@@ -7,27 +8,17 @@ namespace dotnet_react_template.Controllers;
 [Route("api/[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
     private readonly ILogger<WeatherForecastController> _logger;
+    private readonly IGetWeatherForecast _getWeatherForecast;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(
+        ILogger<WeatherForecastController> logger,
+        IGetWeatherForecast getWeatherForecast)
     {
         _logger = logger;
+        _getWeatherForecast = getWeatherForecast;
     }
 
     [HttpGet]
-    public IEnumerable<WeatherForecast> Get()
-    {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
-    }
+    public IEnumerable<WeatherForecast> Get() => _getWeatherForecast.Get();
 }

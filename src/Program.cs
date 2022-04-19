@@ -1,8 +1,11 @@
+using dotnet_react_template.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransientServices();
 
 var app = builder.Build();
 
