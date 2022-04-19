@@ -1,4 +1,4 @@
-using dotnet_react_template.DependencyInjection;
+using DotnetReactTemplate.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

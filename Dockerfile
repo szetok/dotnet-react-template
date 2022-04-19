@@ -10,7 +10,7 @@ WORKDIR /app
 COPY src .
 
 # Compile, then pack the compiled app and dependencies into a deployable unit.
-RUN dotnet publish dotnet-react-template.csproj --output /app/publish --configuration Release --runtime linux-musl-x64
+RUN dotnet publish DotnetReactTemplate.csproj --output /app/publish --configuration Release --runtime linux-musl-x64
 
 # Pull down an image from Docker Hub that includes only the ASP.NET core runtime.
 # We don't need the SDK anymore, so this will produce a lighter-weight image
@@ -28,4 +28,4 @@ EXPOSE 80
 COPY --from=build /app/publish .
 
 # Run the published app.
-CMD ["sh", "-c", "./dotnet-react-template"]
+CMD ["sh", "-c", "./DotnetReactTemplate"]

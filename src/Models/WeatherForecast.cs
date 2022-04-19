@@ -1,4 +1,4 @@
-namespace dotnet_react_template.Models;
+namespace DotnetReactTemplate.Models;
 
 public class WeatherForecast
 {

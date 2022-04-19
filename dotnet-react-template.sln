@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-react-template", "src\dotnet-react-template.csproj", "{8361D422-5AF4-4426-A1EE-48C8862D2FEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetReactTemplate", "src\DotnetReactTemplate.csproj", "{8361D422-5AF4-4426-A1EE-48C8862D2FEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetReactTemplate.Tests", "tests\DotnetReactTemplate.Tests.csproj", "{EA047881-9861-4413-9309-4FFF3E3F5F16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +20,9 @@ Global
 		{8361D422-5AF4-4426-A1EE-48C8862D2FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8361D422-5AF4-4426-A1EE-48C8862D2FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8361D422-5AF4-4426-A1EE-48C8862D2FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA047881-9861-4413-9309-4FFF3E3F5F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA047881-9861-4413-9309-4FFF3E3F5F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA047881-9861-4413-9309-4FFF3E3F5F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA047881-9861-4413-9309-4FFF3E3F5F16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

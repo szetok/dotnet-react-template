@@ -1,6 +1,6 @@
-using dotnet_react_template.Services;
+using DotnetReactTemplate.Services;
 
-namespace dotnet_react_template.DependencyInjection;
+namespace DotnetReactTemplate.DependencyInjection;
 
 public static class ServiceCollectionExtensions
 {

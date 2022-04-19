@@ -1,6 +1,6 @@
-﻿using dotnet_react_template.Models;
+﻿using DotnetReactTemplate.Models;
 
-namespace dotnet_react_template.Services;
+namespace DotnetReactTemplate.Services;
 
 public interface IGetWeatherForecast
 {

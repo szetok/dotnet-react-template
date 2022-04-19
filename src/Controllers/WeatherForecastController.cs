@@ -1,8 +1,8 @@
-﻿using dotnet_react_template.Models;
-using dotnet_react_template.Services;
+﻿using DotnetReactTemplate.Models;
+using DotnetReactTemplate.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet_react_template.Controllers;
+namespace DotnetReactTemplate.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
