@@ -27,7 +27,7 @@
     "typescript": "^4.2.4"
   },
   "scripts": {
-    "prestart": "node aspnetcore-https && node aspnetcore-react",
+    "prestart": "node ./src/scripts/aspnetcore-https && node ./src/scripts/aspnetcore-react",
     "start": "rimraf ./build && react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
